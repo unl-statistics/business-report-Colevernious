@@ -1,3 +1,30 @@
 ---
 title: "Draft: Data Documentation"
 ---
+Data Source: NOAA Tides and Currents
+
+Who collected the data: NOAA Center for Operational Oceanographic Products and Services (CO-OPS)
+
+Why the data was collected: To provide data that would help businesses and civilians in coastal areas stay informed about what is going on in the waters that surround them.
+
+What the data is about: The data I am specifically looking at keeps track of the water temperature in Dauphin Island, Alabama.
+
+When the data was collected: The data was collected from August 1995 - November 1997, March 2002 - August 2006, September 2007 - October 2020, March 2022 - December 2023, and April 2024 - Present.
+
+Where the data was collected: Dauphin Island, Alabama
+
+How the data was generated/collected: They have a sensor labeled with sensor ID "E1" to record the temperature of the water.
+
+Structure of the data: The data is put into an interactive graph where you can set the beginning and end of a time range, and it will plot the water temperatures, either in 6-minute or hour long intervals.
+
+Formatting decisions in the data: If you don't want to use a graph to look at the data, you can opt to have the system print out the temperatures in a data frame with the same two options for time intervals and a customized start and end period.
+
+Data validation/quality control: NOAA CO-OPS has Oceanographers that make sure the data is accurate and reliable. They also hire field technical experts to maintain the measuring tools and instruments and ensure they operate to meet rigorous scientific standards. The data is then handled by data scientists to clean and organize the data to be used.
+
+How the data can be reused/license: The data is open to the public and can be used whenever someone is interested to learn more about water temperature at a specific location.
+
+Suggested data analysis methods: Since we want to know what the probability is that the plant will have to operate at reduced capacity in the next 5 years, we obviously need to look and he if and how often the water temperature at Dauphin Island reaches above 85 degrees. From there, we can predict the likelihood that the temperature will be higher than 85 degrees in the next five years.
+
+Measurement instruments used: A sensor is placed in the water and records the temperature in both degrees Celsius and Fahrenheit.
+
+Website: https://tidesandcurrents.noaa.gov/inventory.html?id=8735180 
