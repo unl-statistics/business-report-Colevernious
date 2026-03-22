@@ -28,3 +28,12 @@ Suggested data analysis methods: Since we want to know what the probability is t
 Measurement instruments used: A sensor is placed in the water and records the temperature in both degrees Celsius and Fahrenheit.
 
 Website: https://tidesandcurrents.noaa.gov/inventory.html?id=8735180 
+
+::: callout-note
+
+You need to be much more formal about this -- write it out in paragraphs. 
+Describe any differences between the data in each period. In methods, describe how you combined the data. 
+Is there any point in having 6-minute intervals? Or would hour-long intervals be sufficient? 
+Cite the data -- create a bibliographical entry in Zotero as a website, copy that to your bibtex file, and reference it properly here.
+
+:::
