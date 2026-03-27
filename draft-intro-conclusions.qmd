@@ -5,7 +5,7 @@ title: "Draft: Intro/Conclusions"
 
 Electrical demand changes over the course of a year. The AC unit in your house requires larger amounts of power in the summer months to keep your house cool. On the contrary, the heating system requires more power in the colder winter months. The same is true for the power plants that supply the electricity that we all use. The capacity that a power plant works at is dependent on natural circumstances. Things like extreme temperatures and storms have a massive influence on the energy demand that these power plants require.  
 
-For power plants that are positioned along the oceans and rely on water to generate power. The same way that the capacity of a plant is reliant on temperature, the temperature of the water will also have an impact on the total energy load that a power plant can handle. In this specific scenario, the task was to examine how the temperature of the water changes near Dauphin Island, Alabama, and compare it to the energy usage that a power plant located in that area experiences. If the water temperature rises above 85 degrees Fahrenheit, the power plant must operate at reduced capacity.
+For power plants that are positioned along the oceans and rely on water to generate power. The same way that the capacity of a plant is reliant on temperature, the temperature of the water will also have an impact on the total energy load that a power plant can handle. In this specific scenario, the task was to examine how the temperature of the water changes near Dauphin Island, Alabama, and compare it to the energy usage that a power plant located in that area experiences. If the water temperature rises above 85 degrees Fahrenheit, the power plant will need to operate at reduced capacity.
 
 
 # Conclusion
