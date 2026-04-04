@@ -5,9 +5,32 @@ title: "Draft: Intro/Conclusions"
 
 Electrical demand changes over the course of a year. The AC unit in your house requires larger amounts of power in the summer months to keep your house cool. On the contrary, the heating system requires more power in the colder winter months. The same is true for the power plants that supply the electricity that we all use. The capacity that a power plant works at is dependent on natural circumstances. Things like extreme temperatures and storms have a massive influence on the energy demand that these power plants require.  
 
+::: callout-note
+
+I don't think "on the contrary" is what you're going for -- maybe "In addition, ...".
+
+Also, "the same is true for the power plants" is not true and a bit vague -- power plants are more efficient in the winter due to the temperature differential and less efficient in the summer because that temperature differential is lower. Almost all power plants (solar/wind/hydro excepted) are thermal plants -- they generate steam which turns turbines, and then the steam is released or condensed and the heat is dumped in the sky or water near the plant through various heat exchangers.
+
+:::
+
 For power plants that are positioned along the oceans and rely on water to generate power. The same way that the capacity of a plant is reliant on temperature, the temperature of the water will also have an impact on the total energy load that a power plant can handle. In this specific scenario, the task was to examine how the temperature of the water changes near Dauphin Island, Alabama, and compare it to the energy usage that a power plant located in that area experiences. If the water temperature rises above 85 degrees Fahrenheit, the power plant will need to operate at reduced capacity.
 
+::: callout-note
+
+Grammar check, please -- first sentance of the paragraph above is a fragment.
+
+Past tense may not be that great -- how about "This report assesses the threat of increasing Gulf temperatures to the ability to safely and economically operate the plant. As part of this risk assessment, the report also considers the economic consequences of reduced generation capacity in order to assess whether  equipment upgrades or plant modifications to mitigate temperature increases should be considered when planning future operations."
+
+:::
 
 # Conclusion
 
 Based on the results of the analysis, it is highly probable that the power plant on Dauphin Island, Alabama will need to operate at reduced capacity due to the temperature of the water. Data from recent water temperatures and implications that overall temperatures will continue to rise in the coming years lead to the assumption that the power plant needs to prepare for operating at reduced capacity. The plant should take the necessary precautions to still give out an optimal energy output while not operating at full capacity. Until further data suggests that average temperatures will decrease in the coming years, the summer months are a time that the power plant will likely need to operate at reduced capacity.
+
+::: callout-note
+
+The plant could also modify the intake structure to e.g. pull water from lower in the gulf where it should be cooler, or upgrade the heat exchanger. Consider alternative solutions that might be worth considering. Make sure all recommendations are backed up with data and that you're highlighting the important conclusions.
+
+Your conclusion should be several paragraphs!
+
+:::
