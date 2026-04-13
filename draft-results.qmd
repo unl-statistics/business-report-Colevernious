@@ -13,6 +13,8 @@ You may want to combine data from several stations around Dauphin Island. They m
 ```{r}
 library(tidyverse)
 Dauphin_Island <- read.csv("dauphin_island.csv")
+coast_guard_sector <- read.csv("coast_guard_sector.csv")
+energy_demand <- read.csv("energy_demand.csv")
 ```
 
 ```{r}
