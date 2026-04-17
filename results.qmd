@@ -1,16 +1,14 @@
 ---
-title: "Draft: Results"
+title: "results.qmd"
 ---
 
 Specific data on the energy usage for the Dauphin Island power plant could not be found, so the Hog Bayou Energy Center data was used to gather the results of the study. This plant sits alongside the Mobile River which feeds into the gulf, and is about 30 miles North of Dauphin Island. Data depicting the water temperature near the island was taken from NOAA, where a max time period of one year with one-hour intervals could be visualized on a graph or in table form. The most recent one-year time frame that had a full year's worth of data was from March 9th, 2022 to March 8th, 2023.
 
-::: callout-note
-
-You may want to combine data from several stations around Dauphin Island. They moved the stations, but there is a much longer period of data, and you should have that in order to get a sense of what has happened over the past 30 years wrt global warming.
-
-:::
-
 ```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
 library(tidyverse)
 library(kableExtra)
 Dauphin_Island <- read.csv("dauphin_island.csv")
@@ -82,10 +80,3 @@ ggplot(combined, aes(x = avg_water_temp, y = SOCO.Demand..MWh.)) +
 model <- lm(SOCO.Demand..MWh. ~ avg_water_temp, data = combined)
 summary(model)
 ```
-
-
-::: callout-note
-
-Also consider how to make your R output presentation ready -- can you make a table? A chart? You do not want raw output when your work is presented to a supervisor formally. 
-
-:::
