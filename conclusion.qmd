@@ -1,5 +1,5 @@
 ---
-title: "conclusion.qmd"
+title: "Conclusion"
 ---
 
 Based on the results of the analysis, it is highly probable that the power plant on Dauphin Island, Alabama will need to operate at reduced capacity due to the temperature of the water. Data from recent water temperatures and implications that overall temperatures will continue to rise in the coming years lead to the assumption that the power plant needs to prepare for operating at reduced capacity. The plant should take the necessary precautions to still give out an optimal energy output while not operating at full capacity. Until further data suggests that average temperatures will decrease in the coming years, the summer months are a time that the power plant will likely need to operate at reduced capacity.

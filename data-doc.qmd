@@ -1,8 +1,8 @@
 ---
-title: "data-doc"
+title: "Data Documentation"
 ---
 
-# Water Temperature Data
+## Water Temperature Data
 
 The data that was used to evaluate @WaterTemperature was taken from the NOAA Tides and Currents website. More specifically, the NOAA Center for Operational Oceanographic Products and Services (CO-OPS) is responsible for harvesting the data. The purpose of harvesting the data is to provide data that helps businesses and civilians in coastal areas stay informed about what is going on in the waters that surround them. All the data on their website is open to the public and can be accessed at any time. The data set that was specifically used in this report involves an interactive table where you can customize a time frame, either in 6-minute intervals or 1-hour intervals, and examine the surface water temperature near Dauphin Island, Alabama.
 
@@ -15,13 +15,13 @@ NOAA uses a sensor with an ID "E1" to record the temperature of the water. The s
 NOAA CO-OPS has Oceanographers that make sure the data is accurate and reliable. They also hire field technical experts to maintain the measuring tools and instruments and ensure they operate to meet rigorous scientific standards. The data is then handled by data scientists to clean and organize the data to be used.
 
 
-# Electrical Demand Data
+## Electrical Demand Data
 
 The data set used to observe @energy_demand was taken from the EIA (Energy Information Administration). On their website, users can access many different graphs that display different information about the electrical usage and production in America. The data that was used in this report came from a customized graph/table that showed the electrical demand of the Southeastern region of the country (this region includes the entire state of Alabama). The same time frame that was used for the water temperature data was also used here.
 
 EIA is consistently harvesting electrical demand data that is open to the public. Their information is gathered by certain electrical companies and other businesses in the power industry report their own data to EIA, where they combine it with companies all over the country and present it in interactive graphs and tables. For this report, the data was in the form of a table to make it easier to export the data into RStudio.
 
 
-# Methods
+## Methods
 
 The two data sets that were used in this report were combined by using the "mutate" function to turn the columns in each data set that dealt with time, and turned them into a numeric value. From their, an "inner_join" function was used to combine the two data sets by the time stamp column that both data sets now share. After the two data sets were joined together, the water temperature column in the NOAA data set was compared with the energy demand column in the EIA data set in a scatterplot. A regression line was added and a summary was generated to see the correlation between the two factors.

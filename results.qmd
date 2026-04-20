@@ -1,5 +1,5 @@
 ---
-title: "results.qmd"
+title: "Results"
 ---
 
 Specific data on the energy usage for the Dauphin Island power plant could not be found, so the Hog Bayou Energy Center data was used to gather the results of the study. This plant sits alongside the Mobile River which feeds into the gulf, and is about 30 miles North of Dauphin Island. Data depicting the water temperature near the island was taken from NOAA, where a max time period of one year with one-hour intervals could be visualized on a graph or in table form. The most recent one-year time frame that had a full year's worth of data was from March 9th, 2022 to March 8th, 2023.
@@ -10,11 +10,14 @@ Specific data on the energy usage for the Dauphin Island power plant could not b
 #| warning: false
 
 library(tidyverse)
+library(broom)
 library(kableExtra)
 Dauphin_Island <- read.csv("dauphin_island.csv")
 coast_guard_sector <- read.csv("coast_guard_sector.csv")
 energy_demand <- read.csv("energy_demand.csv")
 ```
+
+## Water Temperature Analysis
 
 ```{r}
 #| echo: false
@@ -24,10 +27,9 @@ energy_demand <- read.csv("energy_demand.csv")
 eighty_five <-Dauphin_Island %>%
   filter(Water.Temp...F. > 85)
 
-nrow(eighty_five)
 ```
 
-The total number of hours in our time frame where water temperature exceeded 85 degrees is `r nrow(Dauphin_Island)` hours out of 8759. If we take the proportion of time where the water temperature in the gulf is above 85 degrees Fahrenheit, we would get a value of 0.2017 (20.17%).
+The total number of hours in our time frame where water temperature exceeded 85 degrees is `r nrow(eighty_five)` hours out of 8759. If we take the proportion of time where the water temperature in the gulf is above 85 degrees Fahrenheit, we would get a value of 0.2017 (20.17%).
 
 ```{r}
 #| echo: false
@@ -49,7 +51,7 @@ month_freq |>
 
 It was reasonable for us to suspect that the water temperature would exceed 85 degrees the most often in the summer months, but it is still important that we narrow down exactly when during the summer that the plant will have to operate at reduced power. From the table, we can see that the plant will have to operate at reduced capacity in July, followed by June and August. According to @climate2025, the 10 warmest years in history have all been in the last decade, and the Earth is showing no signs of cooling down.
 
-# Linear Regression
+## Linear Regression
 ```{r}
 #| echo: false
 #| message: false
@@ -78,5 +80,7 @@ ggplot(combined, aes(x = avg_water_temp, y = SOCO.Demand..MWh.)) +
 #| warning: false
 
 model <- lm(SOCO.Demand..MWh. ~ avg_water_temp, data = combined)
-summary(model)
+
+tidy(model) |>
+  kable(caption = "Linear Regression Results: Water Temperature vs. Energy Demand", digits = 30, col.names = c("Term", "Estimate", "Std. Error", "t-statistic", "p-value"))
 ```
