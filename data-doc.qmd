@@ -1,5 +1,5 @@
 ---
-title: "Data Documentation"
+title: "Methodology"
 ---
 
 ## Water Temperature Data
@@ -22,6 +22,6 @@ The data set used to observe @energy_demand was taken from the EIA (Energy Infor
 EIA is consistently harvesting electrical demand data that is open to the public. Their information is gathered by certain electrical companies and other businesses in the power industry report their own data to EIA, where they combine it with companies all over the country and present it in interactive graphs and tables. For this report, the data was in the form of a table to make it easier to export the data into RStudio.
 
 
-## Methods
+## How the Analysis was Run
 
 The two data sets that were used in this report were combined by using the "mutate" function to turn the columns in each data set that dealt with time, and turned them into a numeric value. From their, an "inner_join" function was used to combine the two data sets by the time stamp column that both data sets now share. After the two data sets were joined together, the water temperature column in the NOAA data set was compared with the energy demand column in the EIA data set in a scatterplot. A regression line was added and a summary was generated to see the correlation between the two factors.

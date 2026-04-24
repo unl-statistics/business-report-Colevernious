@@ -4,7 +4,11 @@ title: "Executive Summary"
 
 Power plants often rely on water to help produce the energy needed to sustain the infrastructure of the economy. When the water temperature rises, it leads to an output reduction in electrical output due to the lost temperature differential between the plant's system and the water temperature. The power plants near Dauphin Island, Alabama operate at a normal rate while the temperature of the water that feeds into it is below 85 degrees Fahrenheit. When that threshold is surpassed, the plant must operate at a reduced capacity to avoid internal problems in the plant, such as **grid failures** and causing damage to **aquatic ecosystems**.
 
-Water temperature measurements were taken from @NOAA over the span of one year (March 9th, 2022 - March 8th, 2023) in one hour intervals using sensors that reported surface temperature in degrees Fahrenheit. Energy data was taken from @EIA, covering the Southeast region of the country (including Alabama), and the monthly energy demand over the same time span.
+## Methodology
+
+Water temperature measurements were taken from @NOAA over the span of one year (March 9th, 2022 - March 8th, 2023) in one hour intervals using sensors that reported surface temperature in degrees Fahrenheit. Energy data was taken from @EIA, covering the Southeast region of the country (including Alabama), and the monthly energy demand over the same time span. The findings presented in this report were found by plotting a linear regression model, comparing water temperature to energy demand. Summary statistics were presented to evaluate the true risk of having to operate at reduced capacity.  
+
+## Findings
 
 The water temperature data showed that the water temperature exceeds 85 degrees most often in the summer. There were a total of **1767** measurements (or hours) of the water exceeding the 85 degree threshold over the span of a year. 
 
@@ -12,10 +16,14 @@ The water temperature data showed that the water temperature exceeds 85 degrees 
 Recent data about global warming from @climate2025 indicates there is no way we can assume the surface temperature of the water will be cooler in the summer months due to increasing global temperatures.
 :::
 
-Evaluating the relationship between water temperature and electrical demand gave a p-value less than 0.05 (4.559764e-28), concluding that this relationship **is significant** and the high water temperatures play a considerable factor in the electrical demand, and should not be overlooked.
+Evaluating the relationship between water temperature and electrical demand gave a p-value less than 0.05 (4.559764e-28), concluding that this relationship **is significant** and the high water temperatures play a factor in the electrical demand, and should not be overlooked.
 
-Recommendations for the plant to prepare for these occurrences, especially during the summer months, include attempting to harvest **cooler water** from deeper in the gulf, and/or upgrading the cooling systems in the plant as to not delay the process when water temperatures go above 85 degrees. 
+::: {.callout-notice title="Statistical Value Definitions}
+
+## Recommendations
+
+Recommendations for the plant to prepare for these occurrences include attempting to harvest **cooler water** from deeper in the gulf, and/or upgrading the cooling systems in the plant as to not delay the process when water temperatures go above 85 degrees. 
 
 :::{.callout-warning}
-Harvesting cooler water is not the ideal fix for this problem due to the power plant not being able to reach deep enough in the gulf.
+Harvesting cooler water is not the ideal solution for this problem due to the power plant not being able to reach deep enough in the gulf.
 :::

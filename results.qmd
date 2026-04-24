@@ -48,8 +48,21 @@ month_freq |>
   kable(caption = "Frequency of High Water Temperature Occurrences by Month") |>
   kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F, position = "left")
 ```
+```{r}
+montly_summary <- combined |>
+  mutate(Month = month(Date, label = TRUE, abbr = TRUE)) |>
+  group_by(Month) |>
+  summarize(avg_temp = mean(avg_water_temp, na.rm = TRUE))
 
-It was reasonable for us to suspect that the water temperature would exceed 85 degrees the most often in the summer months, but it is still important that we narrow down exactly when during the summer that the plant will have to operate at reduced power. From the table, we can see that the plant will have to operate at reduced capacity in July, followed by June and August. According to @climate2025, the 10 warmest years in history have all been in the last decade, and the Earth is showing no signs of cooling down.
+ggplot(montly_summary, aes(x=Month, y=avg_temp, fill = avg_temp)) +
+  geom_col() +
+  scale_fill_gradient(low = "blue", high = "red") +
+  labs(title = "Average Water Temperature (F)", x= "Month", y = "Temp (F)") +
+  theme_minimal()
+
+```
+
+It was reasonable for us to suspect that the water temperature would exceed 85 degrees most often in the summer months, but it is still important that we narrow down exactly when during the summer that the plant will have to operate at reduced power. From the table, we can see that the plant will have to operate at reduced capacity in July, followed by June and August. No other months recorded temperatures above 85 degrees. According to @climate2025, the 10 warmest years in history have all been in the last decade, and the Earth is showing no signs of cooling down.
 
 ## Linear Regression
 ```{r}
@@ -84,3 +97,6 @@ model <- lm(SOCO.Demand..MWh. ~ avg_water_temp, data = combined)
 tidy(model) |>
   kable(caption = "Linear Regression Results: Water Temperature vs. Energy Demand", digits = 30, col.names = c("Term", "Estimate", "Std. Error", "t-statistic", "p-value"))
 ```
+
+From the table, we can see that for every degree Fahrenheit that the water temperature increases, the energy demand is predicted to increase by 4,877 MWh, with an intercept starting at 289,619 MWh if the water temperature was 0 degrees. The R-squared value of 0.2831 means that about 28.3% of the variance in energy demand can be explained by the water temperature. A p-value of less than 0.05 means that this relationship is significant.
+
