@@ -1,0 +1,114 @@
+---
+title: "Water Temperature vs. Energy Demand"
+author: "Cole Boyer"
+format: revealjs
+theme: simple
+---
+
+## Introduction
+
+Energy can be generated in many ways. Kinetic energy, solar energy, magnetism, and using thermal power. Many power plants rely on thermal power to generate electricity. They use heat from burning fuels, which generates steam, which spins turbines that are connected to generators that produce energy. Power plants that sit along a body of water boil water to create steam. When the water is above **85 degrees Fahrenheit**, the power plant needs to operate at reduced capacity to avoid issues within the plant.
+
+
+## Data Documentation
+
+Data regarding the water temperature was taken from the **NOAA Tides and Currents** websites using an interactive and table. The dates selected (March 9th 2022 - March 8th 2023 in one hour intervals) were used because it was the last time period where data was available for a full consecutive year. Energy demand data was pulled from the **EIA** (Energy Information Administration) website, using an interactive table and using the same time frame.
+
+::: callout-important
+For the water temperature data, you could view the data in 6 minute intervals or in 1 hour intervals. Choosing the 6 minute intervals only allows you to see one month's worth of data at a time, where 1 hour intervals lets you view up to a year at a time.
+:::
+
+## Methods
+The findings and analysis presented in this reported was gathered by combining the data sets using their time columns and comparing water temperature to energy demand in a scatter plot. A linear regression line was added to view the correlation and a model reporting p-value, estimates, and a R-squared value.
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(broom)
+library(kableExtra)
+Dauphin_Island <- read.csv("dauphin_island.csv")
+energy_demand <- read.csv("energy_demand.csv")
+
+water <- Dauphin_Island |>
+  mutate(Date = as.Date(Date)) |>
+  group_by(Date) |>
+  summarize(avg_water_temp = mean(as.numeric(Water.Temp...F.), na.rm = TRUE))
+
+energy <- energy_demand |>
+  mutate(Date = as.Date(Timestamp..Hour.Ending., format = "%m/%d/%Y"))
+
+combined <- inner_join(water, energy, by = "Date")
+```
+
+## Water Temperatures by Month
+```{r}
+monthly_summary <- combined |>
+  mutate(Month = month(Date, label = TRUE, abbr = TRUE)) |>
+  group_by(Month) |>
+  summarize(avg_temp = mean(avg_water_temp, na.rm = TRUE))
+
+ggplot(monthly_summary, aes(x=Month, y=avg_temp, fill = avg_temp)) +
+  geom_col() +
+  scale_fill_gradient(low = "blue", high = "red") +
+  labs(title = "Average Water Temperature (F)", x= "Month", y = "Temp (F)") +
+  theme_minimal()
+
+```
+
+## Observations above 85 degrees Fahrenheit in Each Month
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+eighty_five <-Dauphin_Island %>%
+  filter(Water.Temp...F. > 85)
+
+high_temp <- Dauphin_Island %>%
+  filter(Water.Temp...F. > 85) %>%
+  mutate(Month = month(Date, label = TRUE))
+month_freq <- high_temp %>%
+  count(Month) %>%
+  arrange(desc(n))
+
+month_freq |>
+  rename(Month = Month, `Hours Above 85 degrees Fahrenheit` = n) |>
+  kable(caption = "Frequency of High Water Temperature Occurrences by Month") |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F, position = "left")
+```
+`r nrow(eighty_five)` hours out of 8759 total observations were above 85 degrees Fahrenheit, which gives a proportion of **20.17%**.
+
+## Statistical Analysis
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+model <- lm(SOCO.Demand..MWh. ~ avg_water_temp, data = combined)
+
+tidy(model) |>
+  kable(caption = "Linear Regression Results: Water Temperature vs. Energy Demand", digits = 30)
+model_stats <- glance(model)
+cat("The R-squared value for this model is:", round(model_stats$r.squared, 4))
+```
+
+## What Those Numbers Mean in Context
+
+- For every degree Fahrenheit that the water temperature increases, the energy demand is predicted to increase by 4,877 MWh, with an intercept starting at 289,619 MWh if the water temperature was 0 degrees. 
+- The R-squared value of 0.2831 means that about 28.3% of the variance in energy demand can be explained by the water temperature. 
+- A p-value of less than 0.05 (4.56e-32) means that this relationship is significant.
+
+## Conclusion
+
+The statistical analysis determined that the relationship between water temperature and electrical demand is significant and the power plants in and around Dauphin Island, Alabama need to prepare to operate at reduced capacity during the summer months in the next few years. The easiest way to combat this issue is to upgrade the heat exchangers. Heat exchangers are needed to cool the water so that other processes can happen and the power plant can perform its job.
+
+::: callout-warning
+Another option is to harvest cooler water from deeper in the gulf. However, in order to do this, the power plant would need to reach depths of at least 200 feet. Since plants typically sit on the shore of a body of water, this strategy is not preferred.
+:::
+
+## Thank You!
+## Questions?
