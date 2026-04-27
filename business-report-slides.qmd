@@ -3,6 +3,9 @@ title: "Water Temperature vs. Energy Demand"
 author: "Cole Boyer"
 format: revealjs
 theme: simple
+output-dir: docs
+output-file: slides
+self-contained: true
 ---
 
 ## Introduction
@@ -104,7 +107,7 @@ cat("The R-squared value for this model is:", round(model_stats$r.squared, 4))
 
 ## Conclusion
 
-The statistical analysis determined that the relationship between water temperature and electrical demand is significant and the power plants in and around Dauphin Island, Alabama need to prepare to operate at reduced capacity during the summer months in the next few years. The easiest way to combat this issue is to upgrade the heat exchangers. Heat exchangers are needed to cool the water so that other processes can happen and the power plant can perform its job.
+The statistical analysis determined that the relationship between water temperature and electrical demand is significant and the power plants in and around Dauphin Island, Alabama need to prepare to operate at reduced capacity during the summer months in the next few years. The easiest way to combat this issue is to upgrade the heat exchangers. Heat exchangers are needed to cool the water so that other processes can happen.
 
 ::: callout-warning
 Another option is to harvest cooler water from deeper in the gulf. However, in order to do this, the power plant would need to reach depths of at least 200 feet. Since plants typically sit on the shore of a body of water, this strategy is not preferred.

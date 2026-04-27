@@ -27,8 +27,6 @@ format:
   html:
     highlight-style: a11y
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
 
 
 

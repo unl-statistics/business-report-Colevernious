@@ -13,7 +13,6 @@ library(tidyverse)
 library(broom)
 library(kableExtra)
 Dauphin_Island <- read.csv("dauphin_island.csv")
-coast_guard_sector <- read.csv("coast_guard_sector.csv")
 energy_demand <- read.csv("energy_demand.csv")
 ```
 
@@ -48,6 +47,20 @@ month_freq |>
   kable(caption = "Frequency of High Water Temperature Occurrences by Month") |>
   kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F, position = "left")
 ```
+
+```{r}
+water <- Dauphin_Island |>
+  mutate(Date = as.Date(Date)) |>
+  group_by(Date) |>
+  summarize(avg_water_temp = mean(as.numeric(Water.Temp...F.), na.rm = TRUE))
+
+energy <- energy_demand |>
+  mutate(Date = as.Date(Timestamp..Hour.Ending., format = "%m/%d/%Y"))
+
+combined <- inner_join(water, energy, by = "Date")
+```
+
+
 ```{r}
 montly_summary <- combined |>
   mutate(Month = month(Date, label = TRUE, abbr = TRUE)) |>
@@ -95,7 +108,9 @@ ggplot(combined, aes(x = avg_water_temp, y = SOCO.Demand..MWh.)) +
 model <- lm(SOCO.Demand..MWh. ~ avg_water_temp, data = combined)
 
 tidy(model) |>
-  kable(caption = "Linear Regression Results: Water Temperature vs. Energy Demand", digits = 30, col.names = c("Term", "Estimate", "Std. Error", "t-statistic", "p-value"))
+  kable(caption = "Linear Regression Results: Water Temperature vs. Energy Demand", digits = 30)
+model_stats <- glance(model)
+cat("The R-squared value for this model is:", round(model_stats$r.squared, 4))
 ```
 
 From the table, we can see that for every degree Fahrenheit that the water temperature increases, the energy demand is predicted to increase by 4,877 MWh, with an intercept starting at 289,619 MWh if the water temperature was 0 degrees. The R-squared value of 0.2831 means that about 28.3% of the variance in energy demand can be explained by the water temperature. A p-value of less than 0.05 means that this relationship is significant.
