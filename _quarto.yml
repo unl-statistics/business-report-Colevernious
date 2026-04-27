@@ -6,7 +6,7 @@ book:
   title: "Evaluation of Water Temperature and Energy Demand near Dauphin Island, Alabama "
   author: "Cole Boyer"
   page-footer:
-    left: "Copyright 2025, Cole Boyer"
+    left: "Copyright 2026, Cole Boyer"
   chapters:
     - index.qmd
     - exec-summary.qmd

@@ -3,7 +3,6 @@ title: "Water Temperature vs. Energy Demand"
 author: "Cole Boyer"
 format: revealjs
 theme: simple
-output-dir: docs
 output-file: slides
 self-contained: true
 ---
