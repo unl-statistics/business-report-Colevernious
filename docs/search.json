@@ -1,0 +1,166 @@
+[
+  {
+    "objectID": "exec-summary.html",
+    "href": "exec-summary.html",
+    "title": "1  Executive Summary",
+    "section": "",
+    "text": "1.1 Findings\nPower plants often rely on water to help produce the energy needed to sustain the infrastructure of the economy. When the water temperature rises, it leads to an output reduction in electrical output due to the lost temperature differential between the plant’s system and the water temperature. The power plants near Dauphin Island, Alabama operate at a normal rate while the temperature of the water that feeds into it is below 85 degrees Fahrenheit. When that threshold is surpassed, the plant must operate at a reduced capacity to avoid internal problems in the plant, such as grid failures and causing damage to aquatic ecosystems.\nWater temperature measurements were taken from (NOAA?) over the span of one year (March 9th, 2022 - March 8th, 2023) in one hour intervals using sensors that reported surface temperature in degrees Fahrenheit. Energy data was taken from (EIA?), covering the Southeast region of the country (including Alabama), and the monthly energy demand over the same time span.\nThe water temperature data showed that the water temperature exceeds 85 degrees most often in the summer. There were a total of 1767 measurements (or hours) of the water exceeding the 85 degree threshold over the span of a year.\nEvaluating the relationship between water temperature and electrical demand gave a p-value less than 0.05 (4.559764e-28), concluding that this relationship is significant and the high water temperatures play a considerable factor in the electrical demand, and should not be overlooked.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "exec-summary.html#findings",
+    "href": "exec-summary.html#findings",
+    "title": "1  Executive Summary",
+    "section": "",
+    "text": "TipOverall Glboal Temperatures\n\n\n\nRecent data about global warming from “Climate Change: Global Temperature | NOAA Climate.gov” (2025) indicates there is no way we can assume the surface temperature of the water will be cooler in the summer months due to increasing global temperatures.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "exec-summary.html#recommendations",
+    "href": "exec-summary.html#recommendations",
+    "title": "1  Executive Summary",
+    "section": "1.2 Recommendations",
+    "text": "1.2 Recommendations\nRecommendations for the plant to prepare for these occurrences include attempting to harvest cooler water from deeper in the gulf, and/or upgrading the cooling systems in the plant as to not delay the process when water temperatures go above 85 degrees.\n\n\n\n\n\n\nWarning\n\n\n\nHarvesting cooler water is not the ideal solution for this problem due to the power plant not being able to reach deep enough in the gulf.\n\n\n\n\n\n\n“Climate Change: Global Temperature | NOAA Climate.gov.” 2025. https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "results.html",
+    "href": "results.html",
+    "title": "4  Results",
+    "section": "",
+    "text": "4.1 Water Temperature Analysis\nSpecific data on the energy usage for the Dauphin Island power plant could not be found, so the Hog Bayou Energy Center data was used to gather the results of the study. This plant sits alongside the Mobile River which feeds into the gulf, and is about 30 miles North of Dauphin Island. Data depicting the water temperature near the island was taken from NOAA, where a max time period of one year with one-hour intervals could be visualized on a graph or in table form. The most recent one-year time frame that had a full year’s worth of data was from March 9th, 2022 to March 8th, 2023.\nThe total number of hours in our time frame where water temperature exceeded 85 degrees is 1767 hours out of 8759. If we take the proportion of time where the water temperature in the gulf is above 85 degrees Fahrenheit, we would get a value of 0.2017 (20.17%).\nFrequency of High Water Temperature Occurrences by Month\n\n\nMonth\nHours Above 85 degrees Fahrenheit\n\n\n\n\nJul\n662\n\n\nJun\n483\n\n\nAug\n432\n\n\nSep\n190\nIt was reasonable for us to suspect that the water temperature would exceed 85 degrees most often in the summer months, but it is still important that we narrow down exactly when during the summer that the plant will have to operate at reduced power. From the table, we can see that the plant will have to operate at reduced capacity in July, followed by June and August. No other months recorded temperatures above 85 degrees, and while According to “Climate Change: Global Temperature | NOAA Climate.gov” (2025), the 10 warmest years in history have all been in the last decade, and the Earth is showing no signs of cooling down.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "results.html#linear-regression",
+    "href": "results.html#linear-regression",
+    "title": "4  Results",
+    "section": "4.2 Linear Regression",
+    "text": "4.2 Linear Regression\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Regression Results: Water Temperature vs. Energy Demand\n\n\nTerm\nEstimate\nStd. Error\nt-statistic\np-value\n\n\n\n\n(Intercept)\n289619.595\n30043.5466\n9.639994\n9.900451e-20\n\n\navg_water_temp\n4876.986\n407.3445\n11.972630\n4.560000e-28\n\n\n\n\n\n\n\n\n\n“Climate Change: Global Temperature | NOAA Climate.gov.” 2025. https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "5  Conclusion",
+    "section": "",
+    "text": "Based on the results of the analysis, it is highly probable that the power plant on Dauphin Island, Alabama will need to operate at reduced capacity due to the temperature of the water. Data from recent water temperatures and implications that overall temperatures will continue to rise in the coming years lead to the assumption that the power plant needs to prepare for operating at reduced capacity. The plant should take the necessary precautions to still give out an optimal energy output while not operating at full capacity. Until further data suggests that average temperatures will decrease in the coming years, the summer months are a time that the power plant will likely need to operate at reduced capacity.\nRecommendations on how to counteract these high water temperatures in the summer months include harvesting water from deeper in the gulf, and upgrading the heat exchangers. Harvesting cooler water from the gulf is not the preferred adjustment to make, due to the fact that the depths around Dauphin Island is less than 30 feet. According to “How Does the Temperature of Ocean Water Vary?” (n.d.), significant changes in water temperature isn’t observed until a depth of 200 feet. Knowing this, the availability or access to cooler water is very limited. Upgrading the heat exchangers inside the power plant is much more plausible. “Heat Exchangers (2022)” (n.d.) labels heat exchangers as a piece of equipment that transfers heat from one medium to another. Heat exchangers are needed to provide heating or cooling to help enable a process. Power plants need the water to be cooler, so upgrading pieces like the heat echangers and things like distribution nozzles will help cool the water substantially, allowing the plant to operate at a more efficient rate.\n\n\n\n\n“Heat Exchangers (2022).” n.d. https://www.ipieca.org/resources/energy-efficiency-compendium/heat-exchangers-2022.\n\n\n“How Does the Temperature of Ocean Water Vary?” n.d. https://oceanexplorer.noaa.gov/ocean-fact/temp-vary/.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "“Climate Change: Global Temperature | NOAA Climate.gov.”\n2025. https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.\n\n\n“Heat Exchangers (2022).” n.d. https://www.ipieca.org/resources/energy-efficiency-compendium/heat-exchangers-2022.\n\n\n“How Does the Temperature of Ocean Water Vary?” n.d. https://oceanexplorer.noaa.gov/ocean-fact/temp-vary/.\n\n\n“Physical Oceanography - NOAA Tides & Currents.” n.d.\nhttps://tidesandcurrents.noaa.gov/physocean.html?bdate=20220309&edate=20230308&units=standard&timezone=GMT&id=8736897&interval=h.\n\n\n“Real-Time Operating Grid - u.s. Energy Information Administration\n(EIA).” n.d. https://www.eia.gov/electricity/gridmonitor/dashboard/custom/pending.\n\n\n“What Is a Thermal Power Station?” 2025. https://alliedpg.com/latest-articles/thermal-power-station/.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html",
+    "href": "draft-data-doc.html",
+    "title": "Appendix A — Draft: Data Documentation",
+    "section": "",
+    "text": "Data Source: NOAA Tides and Currents\nWho collected the data: NOAA Center for Operational Oceanographic Products and Services (CO-OPS)\nWhy the data was collected: To provide data that would help businesses and civilians in coastal areas stay informed about what is going on in the waters that surround them.\nWhat the data is about: The data I am specifically looking at keeps track of the water temperature in Dauphin Island, Alabama.\nWhen the data was collected: The data was collected from August 1995 - November 1997, March 2002 - August 2006, September 2007 - October 2020, March 2022 - December 2023, and April 2024 - Present.\nWhere the data was collected: Dauphin Island, Alabama\nHow the data was generated/collected: They have a sensor labeled with sensor ID “E1” to record the temperature of the water.\nStructure of the data: The data is put into an interactive graph where you can set the beginning and end of a time range, and it will plot the water temperatures, either in 6-minute or hour long intervals.\nFormatting decisions in the data: If you don’t want to use a graph to look at the data, you can opt to have the system print out the temperatures in a data frame with the same two options for time intervals and a customized start and end period.\nData validation/quality control: NOAA CO-OPS has Oceanographers that make sure the data is accurate and reliable. They also hire field technical experts to maintain the measuring tools and instruments and ensure they operate to meet rigorous scientific standards. The data is then handled by data scientists to clean and organize the data to be used.\nHow the data can be reused/license: The data is open to the public and can be used whenever someone is interested to learn more about water temperature at a specific location.\nSuggested data analysis methods: Since we want to know what the probability is that the plant will have to operate at reduced capacity in the next 5 years, we obviously need to look and he if and how often the water temperature at Dauphin Island reaches above 85 degrees. From there, we can predict the likelihood that the temperature will be higher than 85 degrees in the next five years.\nMeasurement instruments used: A sensor is placed in the water and records the temperature in both degrees Celsius and Fahrenheit.\nWebsite: https://tidesandcurrents.noaa.gov/inventory.html?id=8735180\n\n\n\n\n\n\nNote\n\n\n\nYou need to be much more formal about this – write it out in paragraphs. Describe any differences between the data in each period. In methods, describe how you combined the data. Is there any point in having 6-minute intervals? Or would hour-long intervals be sufficient? Cite the data – create a bibliographical entry in Zotero as a website, copy that to your bibtex file, and reference it properly here.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Draft: Data Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "draft-results.html",
+    "href": "draft-results.html",
+    "title": "Appendix B — Draft: Results",
+    "section": "",
+    "text": "Specific data on the energy usage for the Dauphin Island power plant could not be found, so the Hog Bayou Energy Center data was used to gather the results of the study. This plant sits alongside the Mobile River which feeds into the gulf, and is about 30 miles North of Dauphin Island. Data depicting the water temperature near the island was taken from NOAA, where a max time period of one year with one-hour intervals could be visualized on a graph or in table form. The most recent one-year time frame that had a full year’s worth of data was from March 9th, 2022 to March 8th, 2023.\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   4.0.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ purrr::%||%()   masks base::%||%()\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(kableExtra)\n\n\nAttaching package: 'kableExtra'\n\nThe following object is masked from 'package:dplyr':\n\n    group_rows\n\nDauphin_Island &lt;- read.csv(\"dauphin_island.csv\")\ncoast_guard_sector &lt;- read.csv(\"coast_guard_sector.csv\")\nenergy_demand &lt;- read.csv(\"energy_demand.csv\")\n\n\n\n[1] 1767\n\n\nThe total number of hours in our time frame where water temperature exceeded 85 degrees is 8759 hours out of 8759. If we take the proportion of time where the water temperature in the gulf is above 85 degrees Fahrenheit, we would get a value of 0.2017 (20.17%).\n\n\n\nFrequency of High Water Temperature Occurrences by Month\n\n\nMonth\nHours Above 85 degrees Fahrenheit\n\n\n\n\nJul\n662\n\n\nJun\n483\n\n\nAug\n432\n\n\nSep\n190\n\n\n\n\n\nIt was reasonable for us to suspect that the water temperature would exceed 85 degrees the most often in the summer months, but it is still important that we narrow down exactly when during the summer that the plant will have to operate at reduced power. From the table, we can see that the plant will have to operate at reduced capacity in July, followed by June and August. According to “Climate Change: Global Temperature | NOAA Climate.gov” (2025), the 10 warmest years in history have all been in the last decade, and the Earth is showing no signs of cooling down.\n\nC Linear Regression\n\n\n\n\n\n\n\n\n\n\n\n\nCall:\nlm(formula = SOCO.Demand..MWh. ~ avg_water_temp, data = combined)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-153033  -64437  -10814   48795  453692 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    289619.6    30043.5    9.64   &lt;2e-16 ***\navg_water_temp   4877.0      407.3   11.97   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 87180 on 363 degrees of freedom\nMultiple R-squared:  0.2831,    Adjusted R-squared:  0.2811 \nF-statistic: 143.3 on 1 and 363 DF,  p-value: &lt; 2.2e-16\n\n\n\n\n\n\n\n\nNote\n\n\n\nAlso consider how to make your R output presentation ready – can you make a table? A chart? You do not want raw output when your work is presented to a supervisor formally.\n\n\n\n\n\n\n“Climate Change: Global Temperature | NOAA Climate.gov.” 2025. https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Draft: Results</span>"
+    ]
+  },
+  {
+    "objectID": "draft-intro-conclusions.html",
+    "href": "draft-intro-conclusions.html",
+    "title": "Appendix C — Draft: Intro/Conclusions",
+    "section": "",
+    "text": "D Introduction\nElectrical demand changes over the course of a year. The AC unit in your house requires larger amounts of power in the summer months to keep your house cool. On the contrary, the heating system requires more power in the colder winter months. The same is true for the power plants that supply the electricity that we all use. The capacity that a power plant works at is dependent on natural circumstances. Things like extreme temperatures and storms have a massive influence on the energy demand that these power plants require.\n\n\n\n\n\n\nNote\n\n\n\nI don’t think “on the contrary” is what you’re going for – maybe “In addition, …”.\nAlso, “the same is true for the power plants” is not true and a bit vague – power plants are more efficient in the winter due to the temperature differential and less efficient in the summer because that temperature differential is lower. Almost all power plants (solar/wind/hydro excepted) are thermal plants – they generate steam which turns turbines, and then the steam is released or condensed and the heat is dumped in the sky or water near the plant through various heat exchangers.\n\n\nFor power plants that are positioned along the oceans and rely on water to generate power. The same way that the capacity of a plant is reliant on temperature, the temperature of the water will also have an impact on the total energy load that a power plant can handle. In this specific scenario, the task was to examine how the temperature of the water changes near Dauphin Island, Alabama, and compare it to the energy usage that a power plant located in that area experiences. If the water temperature rises above 85 degrees Fahrenheit, the power plant will need to operate at reduced capacity.\n\n\n\n\n\n\nNote\n\n\n\nGrammar check, please – first sentance of the paragraph above is a fragment.\nPast tense may not be that great – how about “This report assesses the threat of increasing Gulf temperatures to the ability to safely and economically operate the plant. As part of this risk assessment, the report also considers the economic consequences of reduced generation capacity in order to assess whether equipment upgrades or plant modifications to mitigate temperature increases should be considered when planning future operations.”\n\n\n\n\nE Conclusion\nBased on the results of the analysis, it is highly probable that the power plant on Dauphin Island, Alabama will need to operate at reduced capacity due to the temperature of the water. Data from recent water temperatures and implications that overall temperatures will continue to rise in the coming years lead to the assumption that the power plant needs to prepare for operating at reduced capacity. The plant should take the necessary precautions to still give out an optimal energy output while not operating at full capacity. Until further data suggests that average temperatures will decrease in the coming years, the summer months are a time that the power plant will likely need to operate at reduced capacity.\n\n\n\n\n\n\nNote\n\n\n\nThe plant could also modify the intake structure to e.g. pull water from lower in the gulf where it should be cooler, or upgrade the heat exchanger. Consider alternative solutions that might be worth considering. Make sure all recommendations are backed up with data and that you’re highlighting the important conclusions.\nYour conclusion should be several paragraphs!",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Draft: Intro/Conclusions</span>"
+    ]
+  },
+  {
+    "objectID": "draft-exec-summary.html",
+    "href": "draft-exec-summary.html",
+    "title": "Appendix D — Draft: Executive Summary",
+    "section": "",
+    "text": "Power plants often rely on water to help produce the energy needed to sustain the infrastructure of the economy. When the water temperature rises, it leads to an output reduction in electrical output due to the lost temperature differential between the plant’s system and the water temperature. The power plants near Dauphin Island, Alabama operate at a normal rate while the temperature of the water that feeds into it is below 85 degrees Fahrenheit. When that threshold is surpassed, the plant must operate at a reduced capacity to avoid internal problems in the plant, such as grid failures and damage to aquatic ecosystems.\nWater temperature measurements were taken from (NOAA?) over the span of one year (March 9th, 2022 - March 8th, 2023) in one hour intervals using a sensor that reported the surface temperature of the water in degrees Fahrenheit. Energy data was taken from (EIA?), looking at the Southeast region of the country (including Alabama), and the monthly energy demand over the same time span.\nThe results of the water temperature data showed that the summer months experience numerous occasions where the water temperature reaches 85 degrees Fahrenheit or higher. There were a total of 1767 measurements (or hours) of the water exceeding the 85 degree threshold over the span of a year. Due to recent data about global warming from “Climate Change: Global Temperature | NOAA Climate.gov” (2025), there is no way to conclude that the surface temperature of the water will be cooler in the summer months due to increasing global temperatures.\nEvaluating the relationship between water temperature near Dauphin Island Alabama and the electrical demand in the southeast sector of the united states, it gave a p-value less than 0.05 (4.559764e-28), concluding that this relationship is significant and the high water temperatures play a considerable factor in the electrical demand, and should not be overlooked.\nRecommendations for the plant to prepare for these occurrences, especially during the summer months, include attempting to harvest cooler water from deeper in the gulf, and upgrading the cooling systems in the plant as to not delay the process when water temperatures go above 85 degrees.\n\n\n\n\n“Climate Change: Global Temperature | NOAA Climate.gov.” 2025. https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Draft: Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "data-doc.html",
+    "href": "data-doc.html",
+    "title": "3  Methodology",
+    "section": "",
+    "text": "3.1 Water Temperature Data\nThe data that was used to evaluate “Physical Oceanography - NOAA Tides & Currents” (n.d.) was taken from the NOAA Tides and Currents website. More specifically, the NOAA Center for Operational Oceanographic Products and Services (CO-OPS) is responsible for harvesting the data. The purpose of harvesting the data is to provide data that helps businesses and civilians in coastal areas stay informed about what is going on in the waters that surround them. All the data on their website is open to the public and can be accessed at any time. The data set that was specifically used in this report involves an interactive table where you can customize a time frame, either in 6-minute intervals or 1-hour intervals, and examine the surface water temperature near Dauphin Island, Alabama.\nNOAA uses a sensor with an ID “E1” to record the temperature of the water. The sensor is not always active, so some years in recent history had no data. For this report, the range of time went from March 9th, 2022 to March 8th, 2023. This was the most recent time frame where data was available for 365 consecutive days. The data used in this report was taken in the form of a table to make it easy to export it into RStudio.\nNOAA CO-OPS has Oceanographers that make sure the data is accurate and reliable. They also hire field technical experts to maintain the measuring tools and instruments and ensure they operate to meet rigorous scientific standards. The data is then handled by data scientists to clean and organize the data to be used.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodology</span>"
+    ]
+  },
+  {
+    "objectID": "data-doc.html#water-temperature-data",
+    "href": "data-doc.html#water-temperature-data",
+    "title": "3  Methodology",
+    "section": "",
+    "text": "Warning\n\n\n\nIf a 6-minute interval is selected, the data set only allows you to see 1 month’s worth of data. If a 1-hour interval is used, you can see up to a year’s worth of data at one time.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodology</span>"
+    ]
+  },
+  {
+    "objectID": "data-doc.html#electrical-demand-data",
+    "href": "data-doc.html#electrical-demand-data",
+    "title": "3  Methodology",
+    "section": "3.2 Electrical Demand Data",
+    "text": "3.2 Electrical Demand Data\nThe data set used to observe “Real-Time Operating Grid - u.s. Energy Information Administration (EIA)” (n.d.) was taken from the EIA (Energy Information Administration). On their website, users can access many different graphs that display different information about the electrical usage and production in America. The data that was used in this report came from a customized graph/table that showed the electrical demand of the Southeastern region of the country (this region includes the entire state of Alabama). The same time frame that was used for the water temperature data was also used here.\nEIA is consistently harvesting electrical demand data that is open to the public. Their information is gathered by certain electrical companies and other businesses in the power industry report their own data to EIA, where they combine it with companies all over the country and present it in interactive graphs and tables. For this report, the data was in the form of a table to make it easier to export the data into RStudio.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodology</span>"
+    ]
+  },
+  {
+    "objectID": "data-doc.html#how-the-analysis-was-run",
+    "href": "data-doc.html#how-the-analysis-was-run",
+    "title": "3  Methodology",
+    "section": "3.3 How the Analysis was Run",
+    "text": "3.3 How the Analysis was Run\nThe two data sets that were used in this report were combined by using the “mutate” function to turn the columns in each data set that dealt with time, and turned them into a numeric value. From their, an “inner_join” function was used to combine the two data sets by the time stamp column that both data sets now share. After the two data sets were joined together, the water temperature column in the NOAA data set was compared with the energy demand column in the EIA data set in a scatterplot. A regression line was added and a summary was generated to see the correlation between the two factors.\n\n\n\n\n“Physical Oceanography - NOAA Tides & Currents.” n.d. https://tidesandcurrents.noaa.gov/physocean.html?bdate=20220309&edate=20230308&units=standard&timezone=GMT&id=8736897&interval=h.\n\n\n“Real-Time Operating Grid - u.s. Energy Information Administration (EIA).” n.d. https://www.eia.gov/electricity/gridmonitor/dashboard/custom/pending.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodology</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "Electrical demand changes over the course of a year. The AC unit in your house requires larger amounts of power in the summer months to keep your house cool. In addition, the heating system requires more power in the colder winter months. Power plants react to certain temperatures a little differently. The capacity that a power plant works at is dependent on natural circumstances. Things like extreme temperatures and storms have a massive influence on the energy demand that these power plants require. Obviously, power plants require a lot more energy to do their job compared to the heating and cooling systems in your house, but what makes power plants unique is that they operate more efficiently in the winter months. The reasoning behind this is because a majority of power plants are thermal power plants, which “What Is a Thermal Power Station?” (2025) defines as facilities that generate electricity by harnessing the heat energy from various sources. When the weather is cold, the power plant can operate more efficiently because the difference between the outside temperature and the operating temperature of the plant is greater, and opposite is true; the plant is less efficient in the summer months due to a smaller temperature differential.\nThe same way that the capacity of a plant is reliant on temperature, the temperature of the water will also have an impact on the total energy load that a power plant can handle. This claim is specifically true for power plants that rely on near by bodies of water to generate power. This report assesses the threat of increasing Gulf temperatures to the ability to safely and economically operate the plant. As part of this risk assessment, the report also considers the economic consequences of reduced generation capacity in order to assess whether equipment upgrades or plant modifications to counteract temperature increases should be considered when planning future operations.\n\n\n\n\n“What Is a Thermal Power Station?” 2025. https://alliedpg.com/latest-articles/thermal-power-station/.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  }
+]
