@@ -9,7 +9,6 @@ book:
     left: "Copyright 2026, Cole Boyer"
   chapters:
     - index.qmd
-    - exec-summary.qmd
     - intro.qmd
     - data-doc.qmd
     - results.qmd

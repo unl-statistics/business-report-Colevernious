@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +51,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./exec-summary.html" rel="next">
+<link href="./intro.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Executive Summary</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -111,12 +131,6 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exec-summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Executive Summary</span></span></a>
   </div>
 </li>
@@ -195,7 +209,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology"><span class="header-section-number">0.1</span> Methodology</a></li>
+  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings"><span class="header-section-number">0.2</span> Findings</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations"><span class="header-section-number">0.3</span> Recommendations</a></li>
   </ul>
 </nav>
     </div>
@@ -227,44 +243,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>You are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.</p>
-<p>You may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.</p>
-<hr>
-<p>I’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.</p>
-<p>The basic steps for this task are as follows:</p>
-<ul>
-<li><p>Identify the research question from the business question</p></li>
-<li><p>Identify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task</p>
-<ul>
-<li>(HW Week 6) Document your data sets in <code>draft-data-doc.qmd</code></li>
-</ul></li>
-<li><p>Conduct a statistical analysis to support your answer to your research and business questions</p>
-<ul>
-<li><p>Write a methods section for your business report corresponding to your statistical analysis</p></li>
-<li><p>(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in <code>draft-results.qmd</code></p></li>
-</ul></li>
-<li><p>Write your report</p>
-<ul>
-<li><p>(HW Week 10) Draft of Intro/Conclusion sections in <code>draft-intro-conclusions.qmd</code></p></li>
-<li><p>(HW Week 11) Draft of Executive summary section in <code>draft-exec-summary.qmd</code></p></li>
-</ul></li>
-<li><p>Revise your report</p>
-<ul>
-<li><p>(HW Week 12 – not turned in) Revise your report</p></li>
-<li><p>(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in <code>_quarto.yml</code>. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.</p></li>
-<li><p>Develop a presentation to go along with your report (Week 13). Create slides for your report using quarto.</p></li>
-</ul></li>
-<li><p>Peer revise reports</p>
-<ul>
-<li><p>Peer revise reports</p></li>
-<li><p>(HW Week 14) - Make edits to your report from comments received from peer review</p></li>
-</ul></li>
-<li><p>Final report &amp; presentation due</p></li>
-</ul>
+<p>Power plants often rely on water to help produce the energy needed to sustain the infrastructure of the economy. When the water temperature rises, it leads to an output reduction in electrical output due to the lost temperature differential between the plant’s system and the water temperature. The power plants near Dauphin Island, Alabama operate at a normal rate while the temperature of the water that feeds into it is below 85 degrees Fahrenheit. When that threshold is surpassed, the plant must operate at a reduced capacity to avoid internal problems in the plant, such as <strong>grid failures</strong> and causing damage to <strong>aquatic ecosystems</strong>.</p>
+<section id="methodology" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="methodology"><span class="header-section-number">0.1</span> Methodology</h2>
+<p>Water temperature measurements were taken from <span class="citation" data-cites="WaterTemperature"><span>“Physical Oceanography - NOAA Tides &amp; Currents”</span> (<a href="references.html#ref-WaterTemperature" role="doc-biblioref">2026</a>)</span> over the span of one year (March 9th, 2022 - March 8th, 2023) in one hour intervals using sensors that reported surface temperature in degrees Fahrenheit. Energy demand data was taken from <span class="citation" data-cites="energy_demand"><span>“Real-Time Operating Grid - <span>U.S.</span> Energy Information Administration (EIA)”</span> (<a href="references.html#ref-energy_demand" role="doc-biblioref">2026</a>)</span>, covering the Southeast region of the country (including Alabama), and the monthly energy demand over the same time span. The findings in this report were found by plotting a linear regression model with residual plots, comparing variables like water temperature, energy demand, and time. Summary statistics were presented to evaluate the true risk of having to operate at reduced capacity.</p>
+</section>
+<section id="findings" class="level2" data-number="0.2">
+<h2 data-number="0.2" class="anchored" data-anchor-id="findings"><span class="header-section-number">0.2</span> Findings</h2>
+<p>The water temperature data showed that water temperatures exceeds 85 degrees most often in the summer. There were a total of <strong>1767</strong> measurements (or hours) of the water exceeding the 85 degree threshold over the span of a year.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Overall Glboal Temperatures">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Overall Glboal Temperatures
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Recent data about global warming from <span class="citation" data-cites="climate2025"><span>“Climate Change: Global Temperature | NOAA Climate.gov”</span> (<a href="references.html#ref-climate2025" role="doc-biblioref">2025</a>)</span> indicates there is no way we can assume the surface temperature of the water will be cooler in the summer months due to increasing global temperatures.</p>
+</div>
+</div>
+<p>Evaluating the relationship between water temperature and electrical demand gave a p-value less than 0.05 (4.559764e-28), concluding that this relationship <strong>is significant</strong> and the high water temperatures play a factor in the electrical demand, and should not be overlooked.</p>
+</section>
+<section id="recommendations" class="level2" data-number="0.3">
+<h2 data-number="0.3" class="anchored" data-anchor-id="recommendations"><span class="header-section-number">0.3</span> Recommendations</h2>
+<p>Recommendations for the plant to prepare for these occurrences include attempting to harvest <strong>cooler water</strong> from deeper in the gulf, and/or upgrading the cooling systems in the plant as to not delay the process when water temperatures go above 85 degrees.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Harvesting cooler water is not the ideal solution for this problem due to the power plant not being able to reach deep enough in the gulf without laying about 50 miles worth of pipe.</p>
+</div>
+</div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-climate2025" class="csl-entry" role="listitem">
+<span>“Climate Change: Global Temperature | NOAA Climate.gov.”</span> 2025. <a href="https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature">https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature</a>.
+</div>
+<div id="ref-WaterTemperature" class="csl-entry" role="listitem">
+<span>“Physical Oceanography - NOAA Tides &amp; Currents.”</span> 2026. <a href="https://tidesandcurrents.noaa.gov/physocean.html?bdate=20220309&amp;edate=20230308&amp;units=standard&amp;timezone=GMT&amp;id=8736897&amp;interval=h">https://tidesandcurrents.noaa.gov/physocean.html?bdate=20220309&amp;edate=20230308&amp;units=standard&amp;timezone=GMT&amp;id=8736897&amp;interval=h</a>.
+</div>
+<div id="ref-energy_demand" class="csl-entry" role="listitem">
+<span>“Real-Time Operating Grid - <span>U.S.</span> Energy Information Administration (EIA).”</span> 2026. <a href="https://www.eia.gov/electricity/gridmonitor/dashboard/custom/pending">https://www.eia.gov/electricity/gridmonitor/dashboard/custom/pending</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -672,8 +702,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./exec-summary.html" class="pagination-link" aria-label="Executive Summary">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Executive Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

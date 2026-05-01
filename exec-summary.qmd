@@ -18,12 +18,10 @@ Recent data about global warming from @climate2025 indicates there is no way we 
 
 Evaluating the relationship between water temperature and electrical demand gave a p-value less than 0.05 (4.559764e-28), concluding that this relationship **is significant** and the high water temperatures play a factor in the electrical demand, and should not be overlooked.
 
-::: {.callout-notice title="Statistical Value Definitions}
-
 ## Recommendations
 
 Recommendations for the plant to prepare for these occurrences include attempting to harvest **cooler water** from deeper in the gulf, and/or upgrading the cooling systems in the plant as to not delay the process when water temperatures go above 85 degrees. 
 
 :::{.callout-warning}
-Harvesting cooler water is not the ideal solution for this problem due to the power plant not being able to reach deep enough in the gulf.
+Harvesting cooler water is not the ideal solution for this problem due to the power plant not being able to reach deep enough in the gulf without paying for about 50 miles worth of pipe.
 :::

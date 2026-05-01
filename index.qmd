@@ -1,49 +1,27 @@
-# Preface {.unnumbered}
-
-You are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You've been tasked with creating a report evaluating a scenario for your business. 
-Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company's action. 
-The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren't as easy to cut. 
-
-You may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs. 
-
-
+---
+title: "Executive Summary"
 ---
 
-I've scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.
+Power plants often rely on water to help produce the energy needed to sustain the infrastructure of the economy. When the water temperature rises, it leads to an output reduction in electrical output due to the lost temperature differential between the plant's system and the water temperature. The power plants near Dauphin Island, Alabama operate at a normal rate while the temperature of the water that feeds into it is below 85 degrees Fahrenheit. When that threshold is surpassed, the plant must operate at a reduced capacity to avoid internal problems in the plant, such as **grid failures** and causing damage to **aquatic ecosystems**.
 
+# Methodology
 
-The basic steps for this task are as follows:
+Water temperature measurements were taken from @WaterTemperature over the span of one year (March 9th, 2022 - March 8th, 2023) in one hour intervals using sensors that reported surface temperature in degrees Fahrenheit. Energy demand data was taken from @energy_demand, covering the Southeast region of the country (including Alabama), and the monthly energy demand over the same time span. The findings in this report were found by plotting a linear regression model with residual plots, comparing variables like water temperature, energy demand, and time. Summary statistics were presented to evaluate the true risk of having to operate at reduced capacity.
 
-- Identify the research question from the business question
+## Findings
 
-- Identify data set(s) which are (1) publicly available (you don't have a budget to pay for private data) and (2) relevant to your task
+The water temperature data showed that water temperatures exceeds 85 degrees most often in the summer. There were a total of **1767** measurements (or hours) of the water exceeding the 85 degree threshold over the span of a year.
 
-    - (HW Week 6) Document your data sets in `draft-data-doc.qmd`
+::: {.callout-tip title="Overall Glboal Temperatures"}
+Recent data about global warming from @climate2025 indicates there is no way we can assume the surface temperature of the water will be cooler in the summer months due to increasing global temperatures.
+:::
 
-- Conduct a statistical analysis to support your answer to your research and business questions
+Evaluating the relationship between water temperature and electrical demand gave a p-value less than 0.05 (4.559764e-28), concluding that this relationship **is significant** and the high water temperatures play a factor in the electrical demand, and should not be overlooked.
 
-    - Write a methods section for your business report corresponding to your statistical analysis
+## Recommendations
 
-    - (HW Week 9) Draft of results section of business report with relevant graphics/visual aids in `draft-results.qmd`
-    
-- Write your report
+Recommendations for the plant to prepare for these occurrences include attempting to harvest **cooler water** from deeper in the gulf, and/or upgrading the cooling systems in the plant as to not delay the process when water temperatures go above 85 degrees.
 
-    - (HW Week 10) Draft of Intro/Conclusion sections in `draft-intro-conclusions.qmd`
-    
-    - (HW Week 11) Draft of Executive summary section in `draft-exec-summary.qmd`
-    
-- Revise your report
-
-    - (HW Week 12 -- not turned in) Revise your report
-    
-    - (HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in `_quarto.yml`. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf. 
-    
-    - Develop a presentation to go along with your report (Week 13). Create slides for your report using quarto. 
-
-- Peer revise reports
-
-    - Peer revise reports
-    
-    - (HW Week 14) - Make edits to your report from comments received from peer review
-
-- Final report & presentation due
+::: callout-warning
+Harvesting cooler water is not the ideal solution for this problem due to the power plant not being able to reach deep enough in the gulf without laying about 50 miles worth of pipe.
+:::
